@@ -5,23 +5,23 @@ import about1 from "../../../assets/about/chef.png";
 import useScreenWidth from "../../../hooks/screen/useScreenWidth";
 
 export default function ChefSlider() {
-    const cards = [
-        {
-          id: 1,
-          image: about1,
-          position: "Chef Marco",
-        },
-        {
-          id: 2,
-          image: about1,
-          position: "Chef Marco",
-        },
-        {
-          id: 3,
-          image: about1,
-          position: "Chef Lena",
-        },
-      ];
+  const cards = [
+    {
+      id: 1,
+      image: about1,
+      position: "Chef Marco",
+    },
+    {
+      id: 2,
+      image: about1,
+      position: "Chef Marco",
+    },
+    {
+      id: 3,
+      image: about1,
+      position: "Chef Lena",
+    },
+  ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const screenWidth = useScreenWidth();
@@ -37,7 +37,7 @@ export default function ChefSlider() {
       setCurrentSlide(slider.track.details.rel);
     },
   });
-
+  console.log(currentSlide);
 
   return (
     <>
