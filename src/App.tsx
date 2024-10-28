@@ -35,11 +35,7 @@ function App() {
         },
       ],
     },
-    {
-      path: "about",
-      element: <Reserve />,
-      errorElement: <ErrorPage />,
-    },
+   
   ]);
 
   return (
