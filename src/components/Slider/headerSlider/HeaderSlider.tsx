@@ -41,6 +41,7 @@ export default function HeaderSlider() {
       setCurrentSlide(slider.track.details.rel);
     },
   });
+  console.log(currentSlide);
 
   const goToPrevious = () => {
     instanceRef.current?.prev();
@@ -71,10 +72,10 @@ export default function HeaderSlider() {
       </div>
       <div className={styles.navigation}>
         <button onClick={goToPrevious} className={styles.navButton}>
-        <BsArrowLeftCircle />
+          <BsArrowLeftCircle />
         </button>
         <button onClick={goToNext} className={styles.navButton}>
-        <BsArrowRightCircle />
+          <BsArrowRightCircle />
         </button>
       </div>
     </div>
