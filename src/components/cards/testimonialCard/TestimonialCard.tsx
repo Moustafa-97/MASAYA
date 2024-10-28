@@ -2,9 +2,9 @@ import styles from "./testimonialCard.module.css";
 import bgImg from "../../../assets/review_bg.png";
 type Props = {
   card: {
+    id: number;
     comment: string;
     name: string;
-    bgimg: string;
   };
 };
 export default function TestimonialCard(props: Props) {
