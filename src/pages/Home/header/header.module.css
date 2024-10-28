@@ -1,0 +1,161 @@
+.headerSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: fit-content;
+  width: 100%;
+}
+
+.headerH {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  margin: 2vh auto;
+  text-align: start;
+}
+
+.headerH h2 {
+  height: 100%;
+  margin: auto;
+  font-size: clamp(3.2rem, 4vw, 8rem);
+  line-height: 10.3rem;
+  font-weight: 700;
+  color: var(--beij);
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+}
+.headerParagraph {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  text-align: start;
+}
+.headerParagraph p {
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  font-weight: 500;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+}
+.headerBtns {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  margin: 3vh auto;
+  display: flex;
+  gap: 10vw;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headerBtns .reserveNow {
+  width: 10.2vw;
+  height: 10.2vw;
+  min-height: 9.2rem;
+  min-width: 9.2rem;
+  background-color: var(--beij);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+
+  text-decoration: none;
+  color: var(--red);
+  font-family: "Crimson Text", serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 31.2px;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.headerBtns .reserveNow:hover {
+  background-color: var(--red);
+  color: var(--beij);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.headerBtns .rate {
+  width: 10.2vw;
+  height: 10.2vw;
+  min-height: 9.2rem;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.headerBtns .rate p {
+  font-family: "Crimson Text", serif;
+  color: var(--beij);
+  font-size: clamp(4rem, 4vw, 8rem);
+  font-weight: 600;
+  /* line-height: 103.98px; */
+}
+.headerBtns .rate span {
+  font-family: "Crimson Text", serif;
+  color: var(--white);
+  font-size: clamp(0.8rem, 4vw, 2.4rem);
+  font-style: italic;
+  font-weight: 600;
+  /* line-height: 31.2px; */
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+.headerSlider {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 4;
+  justify-self: flex-end;
+  width: 30vw;
+}
+
+@media (min-width: 220px) and (max-width: 768px) {
+  .headerSection {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .headerH h2 {
+    line-height: 3rem;
+  }
+  .headerBtns {
+    grid-row: 4 / span 1;
+  }
+
+  .headerSlider {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+    margin: 4vh auto;
+    width: 80vw;
+  }
+  .headerBtns {
+    justify-content: space-between;
+  }
+}

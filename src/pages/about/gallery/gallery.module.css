@@ -1,0 +1,24 @@
+.gallerySection {
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.galleryHeader {
+  width: 100%;
+  height: 20vh;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto 0;
+}
+.gallerySlider {
+  width: 100%;
+  margin: 4vh auto;
+}

@@ -1,0 +1,27 @@
+.menuhero {
+    width: 100%;
+    height: fit-content;
+    min-height: 50vh;
+    padding: 2%;
+    background-color: var(--red);
+  }
+  
+  .subMenuHero {
+    width: 86%;
+    margin: auto;
+  }
+  .menuSection {
+    width: 86%;
+    height: fit-content;
+    margin: 5vh auto;
+  }
+  
+  @media (min-width: 220px) and (max-width: 768px) {
+    .menuSection {
+      width: 92%;
+    }
+    .subMenuHero {
+      width: 92%;
+    }
+  }
+  

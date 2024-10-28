@@ -1,0 +1,52 @@
+.signatureSection {
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signatureHeader {
+  width: 100%;
+  height: 20vh;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto 0;
+}
+.TextsignatureHeader {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto 0;
+}
+
+.signatureimg {
+  width: 37.014vw;
+  height: 48.484vh;
+}
+.signatureimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+@media (min-width: 220px) and (max-width: 768px) {
+  .signatureSection {
+    flex-direction: column-reverse;
+  }
+  .signatureimg {
+    width: 100%;
+    height: 48.484vh;
+  }
+}

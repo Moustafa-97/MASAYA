@@ -1,0 +1,60 @@
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: auto;
+  width: 100%;
+}
+
+.headerH {
+  margin: auto 0;
+  align-self: flex-start;
+  justify-self: flex-start;
+  text-align: start;
+  margin-bottom: 6%;
+}
+
+.headerH h2 {
+  height: 100%;
+  margin: auto;
+  font-size: clamp(3.2rem, 4vw, 8rem);
+  line-height: 10.3rem;
+  font-weight: 700;
+  color: var(--beij);
+  font-family: "Crimson Text", serif;
+  letter-spacing: 0.2rem;
+  font-style: italic;
+  text-align: start;
+  padding-bottom: 3%;
+  border-bottom: 2px solid var(--beij);
+}
+.headerParagraph1 {
+  text-align: start;
+  width: 85%;
+  margin: 2% auto;
+}
+.headerParagraph1 p {
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 500;
+  color: var(--beij);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  line-height: 5.3rem;
+  letter-spacing: 0.1rem;
+}
+.headerParagraph2 {
+  text-align: start;
+  width: 85%;
+  margin: 2% auto 5% auto;
+}
+.headerParagraph2 p {
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  font-weight: 400;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  line-height: 3.3rem;
+  letter-spacing: 2%;
+}

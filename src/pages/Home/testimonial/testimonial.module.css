@@ -1,0 +1,24 @@
+.testimonialSection {
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.testimonialHeader {
+  width: 100%;
+  height: 20vh;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto 0;
+}
+.testimonialSlider {
+  width: 100%;
+  margin: 4vh auto;
+}

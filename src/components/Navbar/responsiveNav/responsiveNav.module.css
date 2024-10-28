@@ -1,0 +1,62 @@
+/* Button styling */
+.menuButton {
+  top: 2vh;
+  right: 2vw;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1010;
+  position: absolute;
+}
+.menuButton svg {
+  font-size: 3rem;
+}
+
+/* Container for the sliding menu */
+.menuContainer {
+  position: fixed;
+  top: 0;
+  right: -60vw;
+  width: 60vw;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  z-index: 1000;
+  transition: right 0.4s;
+  -webkit-transition: right 0.4s;
+  -moz-transition: right 0.4s;
+  -ms-transition: right 0.4s;
+  -o-transition: right 0.4s;
+}
+
+/* When the menu is open, move it into view */
+.open {
+  right: 0;
+}
+
+.menu {
+  padding: 10vh 5vw;
+}
+
+.menu .menuUl {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu .menuUl .menuLink .menuLi {
+  padding: 8px 0;
+}
+
+.menu .menuUl .menuLink {
+  color: var(--red);
+  text-decoration: none;
+  
+}
+.menu .menuUl .menuLink .menuLi {
+  font-size: 1.8rem;
+}
+
+.menu ul li .menuLink:hover {
+  color: var(--beij);
+}

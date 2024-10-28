@@ -1,0 +1,28 @@
+.reservehero {
+    width: 100%;
+    height: fit-content;
+    min-height: 50vh;
+    padding: 2%;
+    background-color: var(--red);
+  }
+  
+  .subreserveHero {
+    width: 86%;
+    margin: auto;
+  }
+  .reserveSection {
+    width: 86%;
+    height: fit-content;
+    margin: 5vh auto;
+  }
+
+  
+  @media (min-width: 220px) and (max-width: 768px) {
+    .reserveSection {
+      width: 92%;
+    }
+    .subreserveHero {
+      width: 92%;
+    }
+  }
+  

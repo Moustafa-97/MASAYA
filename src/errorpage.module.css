@@ -1,0 +1,58 @@
+.notFoundContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFound {
+  font-size: clamp(4rem, 4vw, 7rem);
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  line-height: 9rem;
+  text-align: center;
+  color: var(--beij);
+}
+.notFoundImage {
+  width: 70%;
+  margin: auto;
+}
+.notFoundParagraph {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.2rem, 4vw, 2.4rem);
+  font-family: Inter;
+  font-weight: 300;
+  line-height: 27.84px;
+  text-align: center;
+  margin-top: 2vh;
+  color: var(--white);
+}
+.btn {
+  margin: 2vh auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+}
+.btn button {
+  margin-top: 2vh;
+  font-size: clamp(1.2rem, 4vw, 2.4rem);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  width: 80%;
+  background-color: var(--beij);
+  color: var(--red);
+  border: none;
+  cursor: pointer;
+  padding: 1rem 20rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+
+}
