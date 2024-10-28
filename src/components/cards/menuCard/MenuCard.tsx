@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./menuCard.module.css";
 import { BsArrowUpLeftCircle } from "react-icons/bs";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Props = any;
 export default function MenuCard(props: Props) {
   const { card } = props;

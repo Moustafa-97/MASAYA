@@ -18,6 +18,7 @@
   width: 100%;
   height: fit-content;
   overflow: hidden;
+  margin: 5vh auto;
 }
 .findUsImage {
   width: 100vw;

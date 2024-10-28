@@ -1,6 +1,12 @@
 import styles from "./testimonialCard.module.css";
 import bgImg from "../../../assets/review_bg.png";
-type Props = any;
+type Props = {
+  card: {
+    comment: string;
+    name: string;
+    bgimg: string;
+  };
+};
 export default function TestimonialCard(props: Props) {
   const { card } = props;
 

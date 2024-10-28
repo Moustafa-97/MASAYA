@@ -1,5 +1,8 @@
+import { lazy, Suspense } from "react";
 import styles from "./header.module.css";
-import HeaderSlider from "../../../components/Slider/headerSlider/HeaderSlider";
+const HeaderSlider = lazy(() =>
+  import("../../../components/Slider/headerSlider/HeaderSlider")
+);
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -28,7 +31,9 @@ export default function Header() {
           </div>
         </div>
         <div className={styles.headerSlider}>
-          <HeaderSlider />
+          <Suspense fallback={<div>Loading...</div>}>
+            <HeaderSlider />
+          </Suspense>
         </div>
       </section>
     </>

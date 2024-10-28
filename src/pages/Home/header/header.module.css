@@ -154,6 +154,10 @@
     grid-row: 3 / span 1;
     margin: 4vh auto;
     width: 80vw;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
   }
   .headerBtns {
     justify-content: space-between;
