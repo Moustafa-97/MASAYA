@@ -14,7 +14,7 @@ export default function TestimonialCard(props: Props) {
     <>
       <div className={styles.card}>
         <div className={styles.cardBg}>
-          <img src={bgImg} alt={card.bgimg} className={styles.cardBgImg} />
+          <img src={bgImg} alt={card.name} className={styles.cardBgImg} />
           <div className={`${styles.subCard}`}>
             <div className={styles.subCardText}>
               <p>{card.comment}</p>
