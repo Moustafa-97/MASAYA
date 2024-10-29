@@ -1,6 +1,6 @@
 import styles from "./testimonialCard.module.css";
 import testi from "../../../assets/testimg.png";
-import useScreenWidth from "../../../hooks/screen/useScreenWidth";
+// import useScreenWidth from "../../../hooks/screen/useScreenWidth";
 type Props = {
   card: {
     id: number;
@@ -10,7 +10,7 @@ type Props = {
 };
 export default function TestimonialCard(props: Props) {
   const { card } = props;
-  const screen = useScreenWidth();
+  // const screen = useScreenWidth();
   return (
     <>
       <div className={styles.card}>
