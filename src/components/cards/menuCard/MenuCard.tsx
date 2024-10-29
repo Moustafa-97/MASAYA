@@ -18,8 +18,10 @@ export default function MenuCard(props: Props) {
           <img src={card.image} alt={card.name} />
         </div>
         <div className={`${styles.subCard}`}>
-          <h3>{card.name}</h3>
-          <p>$ {card.price}</p>
+          <div className={styles.subCardText}>
+            <h3>{card.name}</h3>
+            <p>$ {card.price}</p>
+          </div>
         </div>
         <div className={styles.cardBtn} onClick={() => toggleDetails(card.id)}>
           <BsArrowUpLeftCircle />
