@@ -4,7 +4,7 @@ import image1 from "../../assets/findUs/ruggiero.png";
 import Signature from "./signature/Signature";
 import Testimonial from "../Home/testimonial/Testimonial";
 import Gallery from "./gallery/Gallery";
-import Team from "./team/Team";
+// import Team from "./team/Team";
 import AboutHeader from "./aboutHeader/AboutHeader";
 export default function About() {
   return (
@@ -15,24 +15,24 @@ export default function About() {
             <AboutHeader />
           </div>
         </div>
-        <div className={styles.aboutSection}>
+        <div className="yllaaaSection">
           <Signature />
         </div>
-        <div className={styles.findUsSection}>
-          <div className={styles.aboutSection}>
+        <div className="yllaaaFindUsSection">
+          <div className="yllaaaFindSection">
             <FindUs />
           </div>
-          <div className={styles.findUsImage}>
+          <div className="yllaaaFindUsImgSection">
             <img src={image1} alt="YLLLAleb" />
           </div>
         </div>
-        <div className={styles.aboutSection}>
+        {/* <div className="yllaaaSection">
           <Team />
-        </div>
-        <div className={styles.aboutSection}>
+        </div> */}
+        <div className="yllaaaSection">
           <Gallery />
         </div>
-        <div className={styles.aboutSection}>
+        <div className="yllaaaSection">
           <Testimonial />
         </div>
       </div>

@@ -7,7 +7,6 @@ import "react-datepicker/dist/react-datepicker.css";
 const ReservationForm: React.FC = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
   const [date, setDate] = useState<Date | null>(new Date());
   const [guests, setGuests] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,7 +18,6 @@ const ReservationForm: React.FC = () => {
     const templateParams = {
       name,
       phone,
-      email,
       date: date ? date.toDateString() : "",
       guests,
     };
@@ -65,15 +63,6 @@ const ReservationForm: React.FC = () => {
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Email
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
             required
           />
         </label>

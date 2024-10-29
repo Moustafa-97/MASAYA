@@ -5,6 +5,19 @@
     padding: 2%;
     background-color: var(--red);
   }
+  .reservehero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/headerBg.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.03;
+    z-index: 0;
+  }
   
   .subreserveHero {
     width: 86%;

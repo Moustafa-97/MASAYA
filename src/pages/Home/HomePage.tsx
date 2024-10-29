@@ -15,21 +15,21 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className={styles.homeSection}>
+        <div className="yllaaaSection">
           <AboutUs />
         </div>
-        <div className={styles.homeSection}>
+        <div className="yllaaaSection">
           <ExploreMenu />
         </div>
-        <div className={styles.findUsSection}>
-          <div className={styles.findhomeSection}>
+        <div className="yllaaaFindUsSection">
+          <div className="yllaaaFindSection">
             <FindUs />
           </div>
-          <div className={styles.findUsImage}>
+          <div className="yllaaaFindUsImgSection">
             <img src={image1} alt="YLLLAleb" />
           </div>
         </div>
-        <div className={styles.homeSection}>
+        <div className="yllaaaSection">
           <Testimonial />
         </div>
       </section>

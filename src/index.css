@@ -47,16 +47,52 @@ body {
   padding-top: 2vw;
   margin-bottom: 2%;
 }
+/* pages section */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+.yllaaaSection {
+  width: 86%;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.yllaaaFindUsSection {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 5vh auto;
+}
+
+.yllaaaFindSection {
+  width: 86%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.yllaaaFindUsImgSection {
+  width: 100vw;
+  height: 55vh;
+  margin: 0;
+}
+
+.yllaaaFindUsImgSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 220px) and (max-width: 768px) {
+  .yllaaaFindSection,
+  .yllaaaSection {
+    width: 92%;
   }
 }
+
