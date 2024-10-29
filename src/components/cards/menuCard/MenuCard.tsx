@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./menuCard.module.css";
-import { BsArrowUpLeftCircle } from "react-icons/bs";
+import { CiCircleInfo } from "react-icons/ci";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Props = any;
@@ -24,7 +24,7 @@ export default function MenuCard(props: Props) {
           </div>
         </div>
         <div className={styles.cardBtn} onClick={() => toggleDetails(card.id)}>
-          <BsArrowUpLeftCircle />
+          <CiCircleInfo/>
         </div>
 
         <div
@@ -32,8 +32,11 @@ export default function MenuCard(props: Props) {
             openCardId === card.id ? styles.detailCardOpen : ""
           }`}
         >
-          <p  className={styles.descP}>{card.description}</p>
-          <p className={styles.priceP}><span>price</span><span>$ {card.price}</span></p>
+          <p className={styles.descP}>{card.description}</p>
+          <p className={styles.priceP}>
+            <span>price</span>
+            <span>$ {card.price}</span>
+          </p>
         </div>
       </div>
     </>

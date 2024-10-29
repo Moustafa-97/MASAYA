@@ -4,6 +4,7 @@
   min-height: 100vh;
   background-color: var(--red);
   position: relative;
+  z-index: 1;
 }
 .homehero::before {
   content: "";

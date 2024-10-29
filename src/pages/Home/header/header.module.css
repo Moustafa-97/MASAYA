@@ -42,11 +42,11 @@
 .headerBtns {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  margin: 3vh auto;
+  margin: 3vh 0;
   display: flex;
   gap: 10vw;
-  align-items: center;
-  justify-content: flex-start;
+  width: 100%;
+  align-items: start;
 }
 .headerBtns .reserveNow {
   width: 10.2vw;
@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: auto 0;
   cursor: pointer;
   text-decoration: none;
   color: var(--red);
@@ -81,7 +81,7 @@
   -o-transition: all 0.4s;
 }
 .headerBtns .reserveNow:hover {
-  background-color: #947E3C;
+  background-color: #947e3c;
   color: var(--red);
   transition: all 0.4s;
   -webkit-transition: all 0.4s;

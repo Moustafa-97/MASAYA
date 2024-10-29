@@ -26,32 +26,6 @@
   align-items: flex-start;
   margin: auto 0;
 }
-.exploreHeader .TextexploreHeader .exploreHeaderMini {
-  font-size: clamp(1.5rem, 4vw, 2.4rem);
-  font-weight: 600;
-  letter-spacing: 5%;
-  line-height: clamp(1.9rem, 4vw, 3.1rem);
-  color: var(--red);
-  font-family: "Crimson Text", serif;
-}
-.exploreHeader .TextexploreHeader .exploreHeaderH {
-  font-size: clamp(4rem, 4vw, 6rem);
-  color: var(--black);
-  font-weight: 400;
-  line-height: clamp(4.8rem, 4vw, 7.2rem);
-  font-family: "Inter", sans-serif;
-  text-align: start;
-}
-
-.exploreHeader .TextexploreHeader .exploreHeaderParagraph {
-  font-size: clamp(1.6rem, 4vw, 1.8rem);
-  color: var(--black);
-  font-weight: 400;
-  line-height: clamp(1.9rem, 4vw, 2.1rem);
-  font-family: "Inter", sans-serif;
-  text-align: start;
-  padding-top: 2vw;
-}
 
 .exploreHeader .btnexploreHeader {
   align-self: flex-end;
@@ -67,11 +41,17 @@
 }
 
 .exploreHeader .btnexploreHeader svg {
-  font-size: 3.5rem;
-  color: var(--beij);
+  font-size: 7.2rem;
+  color: var(--red);
 }
 
 .menuSlider {
   width: 100%;
   min-height: 40vh;
+}
+@media (min-width: 220px) and (max-width: 768px) {
+  .TextexploreHeader {
+    width: 100%;
+    
+  }
 }
