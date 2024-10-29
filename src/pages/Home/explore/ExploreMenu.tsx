@@ -23,7 +23,7 @@ export default function ExploreMenu() {
             </Link>
           </div>
         </div>
-        <div style={{ width: "100%" }}>
+        <div style={{ width: "100%", minHeight: "fit-content" }}>
           <MenuSlider />
         </div>
       </section>
