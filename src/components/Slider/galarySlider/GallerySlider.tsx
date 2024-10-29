@@ -37,7 +37,7 @@ export default function GallerySlider() {
 
   const perView = screenWidth <= 775 ? 1 : 3;
 
-  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     slides: {
       perView,
       spacing: 15,
@@ -48,6 +48,9 @@ export default function GallerySlider() {
   });
 
   const dotsCount = Math.max(0, cards.length - perView) + 1;
+  const handleDotClick = (index: number) => {
+    slider.current?.moveToIdx(index);
+  };
 
   return (
     <>
@@ -69,6 +72,7 @@ export default function GallerySlider() {
                 className={`${styles.dot} ${
                   currentSlide === idx ? styles.active : ""
                 }`}
+                onClick={() => handleDotClick(idx)} // Handle dot click
               ></div>
             ))}
           </div>

@@ -12,7 +12,7 @@ export default function Reserve() {
           </div>
         </div>
         <div className={styles.reserveSection}>
-          <Reservation />
+          <Reservation isFor={"page"} />
         </div>
       </div>
     </>

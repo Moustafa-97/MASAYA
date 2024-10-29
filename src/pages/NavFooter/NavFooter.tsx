@@ -13,6 +13,8 @@ export default function NavFooter() {
         style={{
           width: "5.5vw",
           height: "5.5vw",
+          minWidth: "3rem",
+          minHeight: "3rem",
           borderRadius: "50%",
           position: "fixed",
           bottom: "5%",

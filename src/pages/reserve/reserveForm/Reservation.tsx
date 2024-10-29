@@ -3,8 +3,14 @@ import emailjs from "emailjs-com";
 import styles from "./reserve.module.css"; // Import your CSS module
 
 import "react-datepicker/dist/react-datepicker.css";
+import ReservationPHeader from "./reservationPHeader/ReservationPHeader";
+import ReservationFHeader from "./reservationFHeader/ReservationFHeader";
 
-const ReservationForm: React.FC = () => {
+type Props = {
+  isFor: string;
+};
+const ReservationForm = (props: Props) => {
+  const { isFor } = props;
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [date, setDate] = useState<Date | null>(new Date());
@@ -44,8 +50,7 @@ const ReservationForm: React.FC = () => {
 
   return (
     <div className={styles.reservationForm}>
-      <h2>BOOK YOUR TABLE AT MASAYA</h2>
-      <p>Enjoy authentic Lebanese cuisine at your convenience</p>
+      {isFor === "page" ? <ReservationPHeader /> : <ReservationFHeader />}
       <form onSubmit={handleSubmit}>
         <label>
           Your Name

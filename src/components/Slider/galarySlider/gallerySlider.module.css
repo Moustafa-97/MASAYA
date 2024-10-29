@@ -52,12 +52,11 @@
   width: 10px;
   height: 10px;
   margin: 0 5px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(117, 0, 0, 0.2);
   border-radius: 50%;
   transition: width 0.3s ease;
 }
 
 .active {
-  width: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--red);
 }

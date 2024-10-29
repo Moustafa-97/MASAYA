@@ -1,41 +1,40 @@
 .reservehero {
-    width: 100%;
-    height: fit-content;
-    min-height: 50vh;
-    padding: 2%;
-    background-color: var(--red);
-  }
-  .reservehero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/headerBg.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.03;
-    z-index: 0;
-  }
-  
-  .subreserveHero {
-    width: 86%;
-    margin: auto;
-  }
-  .reserveSection {
-    width: 86%;
-    height: fit-content;
-    margin: 5vh auto;
-  }
+  width: 100%;
+  height: fit-content;
+  min-height: 50vh;
+  padding: 2%;
+  background-color: var(--red);
+  position: relative;
+}
+.reservehero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/headerBg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03;
+  z-index: 0;
+}
 
-  
-  @media (min-width: 220px) and (max-width: 768px) {
-    .reserveSection {
-      width: 92%;
-    }
-    .subreserveHero {
-      width: 92%;
-    }
+.subreserveHero {
+  width: 86%;
+  margin: auto;
+}
+.reserveSection {
+  width: 86%;
+  height: fit-content;
+  margin: 5vh auto;
+}
+
+@media (min-width: 220px) and (max-width: 768px) {
+  .reserveSection {
+    width: 92%;
   }
-  
+  .subreserveHero {
+    width: 92%;
+  }
+}
