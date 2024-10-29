@@ -5,11 +5,19 @@ import Footer from "../../components/footer/Footer";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function NavFooter() {
-  // detect screen width using callback and useMemo
+  const whatsappNumber = "+201146598154";
+  const message = "test my app";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
+  const handleWhatsAppClick = () => {
+    window.open(whatsappUrl, "_blank");
+  };
   return (
     <>
       <div
+        onClick={handleWhatsAppClick}
         style={{
           width: "5.5vw",
           height: "5.5vw",
@@ -21,9 +29,9 @@ export default function NavFooter() {
           right: "5%",
           backgroundColor: "var(--beij)",
           zIndex: "1000",
-          display:"flex",
-          alignItems:"center",
-          justifyContent:"center"
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <FaWhatsapp
