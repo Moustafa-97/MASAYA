@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   --red: #791315;
   --black: #202020;
   --white: #f1f1f1;
@@ -15,7 +16,6 @@
 }
 
 body {
-  margin: 0;
   min-height: 100vh;
 }
 

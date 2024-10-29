@@ -14,6 +14,7 @@ export default function HomePage() {
             <Header />
           </div>
         </div>
+
         <div className={styles.homeSection}>
           <AboutUs />
         </div>
