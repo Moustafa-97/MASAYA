@@ -1,8 +1,6 @@
 .card {
   width: 100%;
-  /* height: 35.484vw; */
-  /* max-height: 35.484vh; */
-  /* min-height: 35vh; */
+  height: fit-content;
   margin: 0 auto;
   font-size: 2rem;
   border-radius: 2rem;
@@ -18,18 +16,34 @@
   margin: auto;
   position: relative;
   z-index: 1;
+  background: var(--red);
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
-
-.card .cardBg .cardBgImg {
-  width: 100%;
-  height: 100%;
-  /* position: relative; */
+.cardBg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 70%;
+  background-color: var(--beij);
+  border-bottom-left-radius: 2rem;
+  -webkit-border-bottom-left-radius: 2rem;
+  -moz-border-bottom-left-radius: 2rem;
+  -ms-border-bottom-left-radius: 2rem;
+  -o-border-bottom-left-radius: 2rem;
+  border-top-right-radius: 50%;
+  -webkit-border-top-right-radius: 50%;
+  -moz-border-top-right-radius: 50%;
+  -ms-border-top-right-radius: 50%;
+  -o-border-top-right-radius: 50%;
+  z-index: -1;
 }
+
 .card .subCard {
   position: absolute;
   top: 0;
@@ -41,22 +55,27 @@
   justify-content: center;
   align-items: center;
   gap: 20vw;
-  transform: translateY(-10%);
   margin: auto;
-  -webkit-transform: translateY(-10%);
-  -moz-transform: translateY(-10%);
-  -ms-transform: translateY(-10%);
-  -o-transform: translateY(-10%);
+}
+.card .subCard .avatar {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 0;
 }
 .card .subCard .subCardText {
   position: absolute;
-  top: 20%;
+  top: 5%;
   left: 40%;
-  height: 70%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .card .subCard .subCardText h3 {
   color: var(--beij);
@@ -64,11 +83,69 @@
   font-weight: 700;
   align-self: flex-start;
   text-align: start;
-  margin-top: 4rem;
 }
 .card .subCard .subCardText p {
-  color: var(--beij);
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  font-size: clamp(1.6rem, 4vw, 3.2rem);
   text-align: start;
   font-weight: 400;
+}
+
+@media (min-width: 220px) and (max-width: 768px) {
+  
+  .cardBg::after {
+    left: 50%;
+    width: 50%;
+    height: 30%;
+    background-color: var(--beij);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 10rem 10rem 0 0;
+    -webkit-border-radius: 10rem 10rem 0 0;
+    -moz-border-radius: 10rem 10rem 0 0;
+    -ms-border-radius: 10rem 10rem 0 0;
+    -o-border-radius: 10rem 10rem 0 0;
+  }
+
+  .card .subCard {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20vw;
+  }
+  .card .subCard .avatar {
+    
+    height: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  .card .subCard .subCardText {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .card .subCard .subCardText h3 {
+    align-self: center;
+    text-align: center;
+    font-size: 16px;
+  }
+  .card .subCard .subCardText p {
+    font-size: 16px;
+    text-align: center;
+  }
 }

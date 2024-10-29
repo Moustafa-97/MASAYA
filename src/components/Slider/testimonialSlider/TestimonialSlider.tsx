@@ -7,40 +7,23 @@ export default function TestimonialSlider() {
   const cards = [
     {
       id: 1,
-      name: "Joe Doe",
-      comment: "The best service I’ve ever experienced!",
+      name: "Patricia O'Keefe",
+      comment:
+        "The service and the food was excellent. Very nice lebanese couple managing the place. I am lebanese myself and it was like having a taste from home. I 100% recommend!!",
     },
+
     {
       id: 2,
-      name: "Jane Smith",
-      comment: "Quality and professionalism at its finest.",
-    },
-    {
-      id: 3,
-      name: "Sam Brown",
-      comment: "Exceeded my expectations in every way!",
-    },
-    {
-      id: 4,
-      name: "Lisa Ray",
-      comment: "Truly impressed by the attention to detail.",
-    },
-    {
-      id: 5,
-      name: "Mike Johnson",
-      comment: "A fantastic experience from start to finish.",
-    },
-    {
-      id: 6,
-      name: "Emily Clark",
-      comment: "Highly recommend to anyone looking for quality!",
+      name: "Linda williams",
+      comment:
+        "The food at this establishment is exceptional, with the owners showing great care for their customers and making it a must-try if in Barcelona.",
     },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const perView = 1;
-  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: {
       perView: 1,
@@ -52,7 +35,9 @@ export default function TestimonialSlider() {
   });
 
   const dotsCount = Math.max(0, cards.length - perView) + 1;
-
+  const handleDotClick = (index: number) => {
+    slider.current?.moveToIdx(index);
+  };
   return (
     <div className={styles.carouselContainer}>
       <div ref={sliderRef} className={`${styles.keenSlider} keen-slider`}>
@@ -70,6 +55,7 @@ export default function TestimonialSlider() {
               className={`${styles.dot} ${
                 currentSlide === idx ? styles.active : ""
               }`}
+              onClick={() => handleDotClick(idx)} // Handle dot click
             ></div>
           ))}
         </div>

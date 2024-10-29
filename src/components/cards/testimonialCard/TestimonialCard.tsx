@@ -1,5 +1,6 @@
 import styles from "./testimonialCard.module.css";
-import bgImg from "../../../assets/review_bg.png";
+import testi from "../../../assets/testimg.png";
+import useScreenWidth from "../../../hooks/screen/useScreenWidth";
 type Props = {
   card: {
     id: number;
@@ -9,13 +10,13 @@ type Props = {
 };
 export default function TestimonialCard(props: Props) {
   const { card } = props;
-
+  const screen = useScreenWidth();
   return (
     <>
       <div className={styles.card}>
         <div className={styles.cardBg}>
-          <img src={bgImg} alt={card.name} className={styles.cardBgImg} />
           <div className={`${styles.subCard}`}>
+          <img src={testi} alt="xx" className={styles.avatar} />
             <div className={styles.subCardText}>
               <p>{card.comment}</p>
               <h3>{card.name}</h3>
