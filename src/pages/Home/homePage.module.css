@@ -12,11 +12,24 @@
 .homeSection {
   width: 86%;
   height: fit-content;
-  margin: 5vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10%;
+}
+.findhomeSection {
+  width: 86%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .findUsSection {
   width: 100%;
   height: fit-content;
+  min-height: 100vh;
   overflow: hidden;
   margin: 5vh auto;
 }
@@ -32,6 +45,7 @@
 }
 
 @media (min-width: 220px) and (max-width: 768px) {
+  .findhomeSection,
   .homeSection {
     width: 92%;
   }

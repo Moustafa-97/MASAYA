@@ -32,8 +32,8 @@ export default function MenuCard(props: Props) {
             openCardId === card.id ? styles.detailCardOpen : ""
           }`}
         >
-          <h3>{card.name}</h3>
-          <p>{card.description}</p>
+          <p  className={styles.descP}>{card.description}</p>
+          <p className={styles.priceP}><span>price</span><span>$ {card.price}</span></p>
         </div>
       </div>
     </>

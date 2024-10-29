@@ -21,7 +21,7 @@ export default function HomePage() {
           <ExploreMenu />
         </div>
         <div className={styles.findUsSection}>
-          <div className={styles.homeSection}>
+          <div className={styles.findhomeSection}>
             <FindUs />
           </div>
           <div className={styles.findUsImage}>
