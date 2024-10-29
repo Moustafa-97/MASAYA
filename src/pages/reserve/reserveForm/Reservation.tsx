@@ -27,11 +27,10 @@ const ReservationForm = (props: Props) => {
       date: date ? date.toDateString() : "",
       guests,
     };
-
     try {
       await emailjs.send(
-        "service_9mku6ro",
-        "template_5fely3g",
+        "service_t9atz5r",
+        "template_1v31nnf",
         templateParams,
         "lTzlwWWUa0erxJSnA"
       );
