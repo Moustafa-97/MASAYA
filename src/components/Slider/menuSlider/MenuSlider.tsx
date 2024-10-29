@@ -195,7 +195,7 @@ export default function MenuSlider() {
 
   const perView = screenWidth <= 775 ? 2 : 4;
 
-  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     slides: {
       perView,
       spacing: 15,
@@ -206,7 +206,9 @@ export default function MenuSlider() {
   });
 
   const dotsCount = Math.max(0, cards.length - perView) + 1;
-
+  const handleDotClick = (index: number) => {
+    slider.current?.moveToIdx(index);
+  };
   return (
     <div className={styles.carouselContainer}>
       <div ref={sliderRef} className={`${styles.keenSlider} keen-slider`}>
@@ -218,12 +220,13 @@ export default function MenuSlider() {
       </div>
       {dotsCount > 1 && (
         <div className={styles.dots}>
-          {[...Array(dotsCount).keys()].map((_, idx) => (
+          {[...Array(dotsCount).keys()].map((idx) => (
             <div
               key={idx}
               className={`${styles.dot} ${
                 currentSlide === idx ? styles.active : ""
               }`}
+              onClick={() => handleDotClick(idx)} // Handle dot click
             ></div>
           ))}
         </div>
