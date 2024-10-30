@@ -147,6 +147,10 @@
   }
   .headerBtns {
     grid-row: 4 / span 1;
+    align-items: center;
+  }
+  .headerBtns .reserveNow{
+    margin: auto;
   }
 
   .headerSlider {

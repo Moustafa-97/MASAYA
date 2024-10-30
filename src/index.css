@@ -57,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 
 .yllaaaFindUsSection {
@@ -95,4 +95,3 @@ body {
     width: 92%;
   }
 }
-

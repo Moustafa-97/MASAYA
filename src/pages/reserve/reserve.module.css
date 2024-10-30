@@ -27,7 +27,8 @@
 .reserveSection {
   width: 86%;
   height: fit-content;
-  margin: 5vh auto;
+  margin: 0vh auto;
+  padding: 5vh 0;
 }
 
 @media (min-width: 220px) and (max-width: 768px) {

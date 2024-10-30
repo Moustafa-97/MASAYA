@@ -10,10 +10,8 @@
 }
 .bodyElement {
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(246, 222, 152, 0.15) 0%,
-    rgba(250, 231, 182, 0.075) 53.8%,
-    rgba(255, 244, 229, 0.15) 100%
-  );
+  min-height: 100vh;
+  height: fit-content;
+
+  background: linear-gradient(180deg, #f6de98 15%, #fae7b6 7.5%, #fff4e5 15%);
 }

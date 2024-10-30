@@ -201,6 +201,9 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 10%;
+    width: 60%;
+    height: 60%;
+    margin: auto;
   }
   .social {
     grid-column: 1 / span 2;
