@@ -57,14 +57,13 @@ body {
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
-  margin: 10vh auto auto auto;
+  margin: auto;
   padding-top: 10%;
   /* ios and mac */
   -webkit-justify-content: center;
   -webkit-align-items: center;
   -webkit-margin: auto;
   -webkit-padding-top: 10%;
-
 }
 
 .yllaaaFindUsSection {

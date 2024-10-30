@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="yllaaaSection">
           <AboutUs />
         </div>
-        <div className="yllaaaSection">
+        <div style={{marginTop:"15vh"}} className="yllaaaSection">
           <ExploreMenu />
         </div>
         <div className="yllaaaFindUsSection">
