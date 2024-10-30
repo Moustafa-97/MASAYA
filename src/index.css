@@ -51,14 +51,13 @@ body {
 
 .yllaaaSection {
   width: 86%;
-  position: relative;
   /* height: fit-content; */
   min-height: 100vh;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 10vh auto auto auto;
   padding-top: 10%;
   /* ios and mac */
   -webkit-justify-content: center;
