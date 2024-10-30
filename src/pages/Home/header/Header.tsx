@@ -1,33 +1,33 @@
+// done
+
 import { lazy, Suspense } from "react";
 import styles from "./header.module.css";
 const HeaderSlider = lazy(() =>
   import("../../../components/Slider/headerSlider/HeaderSlider")
 );
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  const { t } = useTranslation();
   return (
     <>
       <section className={styles.headerSection}>
         <div className={styles.headerH}>
-          <h2>Experience Culinary Excellence in the Heart of the City</h2>
+          <h2>{t("homeHeader.title")}</h2>
         </div>
         <div className={styles.headerParagraph}>
-          <p>
-            Masaya, a unique dining experience in Brcelona, combines traditional
-            flavors with modern elements for a memorable dining experience with
-            signature dishes and a cozy ambiance.
-          </p>
+          <p>{t("homeHeader.bigTitle")}</p>
         </div>
         <div className={styles.headerBtns}>
           <Link to={"/reserve"} className={styles.reserveNow}>
-            Reserve Now
+            {t("homeHeader.reserveNow")}
           </Link>
           <div className={styles.rate}>
             <p>4.8</p>
-            <span>Top Rated</span>
+            <span>{t("homeHeader.topRated")}</span>
             <br />
-            <span>on google</span>
+            <span>{t("homeHeader.onGoogle")}</span>
           </div>
         </div>
         <div className={styles.headerSlider}>

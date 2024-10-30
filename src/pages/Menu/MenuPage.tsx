@@ -1,3 +1,5 @@
+// done
+
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useMemo } from "react";
 import MenuFilter from "../../components/filter/MenuFilter";
@@ -202,15 +204,18 @@ const MenuPage: React.FC = () => {
       <section>
         <div className={styles.menuhero}>
           <div style={{ paddingTop: "15vh" }}>
+            {/* done */}
             <MenuHeader />
           </div>
         </div>
         <div className={styles.menuSection}>
+          {/* done */}
           <MenuFilter onFilterChange={setFilter} currentFilter={filter} />
           <MenuGrid cards={filteredCards} />
         </div>
 
         <div className={styles.menuSection}>
+          {/* done */}
           <Testimonial />
         </div>
       </section>

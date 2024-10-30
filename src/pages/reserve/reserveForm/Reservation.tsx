@@ -5,6 +5,7 @@ import styles from "./reserve.module.css"; // Import your CSS module
 import "react-datepicker/dist/react-datepicker.css";
 import ReservationPHeader from "./reservationPHeader/ReservationPHeader";
 import ReservationFHeader from "./reservationFHeader/ReservationFHeader";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   isFor: string;
@@ -47,12 +48,14 @@ const ReservationForm = (props: Props) => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className={styles.reservationForm}>
       {isFor === "page" ? <ReservationPHeader /> : <ReservationFHeader />}
       <form onSubmit={handleSubmit}>
         <label>
-          Your Name
+          {t("reservation.name")}
           <input
             type="text"
             value={name}
@@ -62,7 +65,7 @@ const ReservationForm = (props: Props) => {
         </label>
 
         <label>
-          Phone Number
+          {t("reservation.phone")}
           <input
             type="tel"
             value={phone}
@@ -72,7 +75,7 @@ const ReservationForm = (props: Props) => {
         </label>
 
         <label>
-          Select Date
+          {t("reservation.date")}
           <input
             type="date"
             value={date ? date.toISOString().slice(0, 10) : ""}
@@ -83,7 +86,7 @@ const ReservationForm = (props: Props) => {
         </label>
 
         <label>
-          Guests
+          {t("reservation.guest")}
           <input
             type="number"
             value={guests}

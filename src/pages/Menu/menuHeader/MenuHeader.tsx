@@ -1,24 +1,21 @@
+// done
+
+import { useTranslation } from "react-i18next";
 import styles from "./menuHeader.module.css";
 
 export default function MenuHeader() {
+  const { t } = useTranslation();
   return (
     <>
       <section className={styles.headerSection}>
         <div className={styles.headerH}>
-          <h2>OUR MENU</h2>
+          <h2>{t("menuHeader.title")}</h2>
         </div>
         <div className={styles.headerParagraph1}>
-          <p>
-            Discover the rich, flavorful essence of Lebanese cuisine, curated
-            with passion and tradition.
-          </p>
+          <p>{t("menuHeader.bigTitle")}</p>
         </div>
         <div className={styles.headerParagraph2}>
-          <p>
-            Masaya invites you to savor the true essence of Lebanon with
-            signature mezze platters and succulent grilled dishes, all crafted
-            to deliver a rich culinary journey."
-          </p>
+          <p>{t("menuHeader.paragraph")}</p>
         </div>
       </section>
     </>

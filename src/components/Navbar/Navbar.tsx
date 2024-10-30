@@ -1,25 +1,28 @@
+// done
+
+import { useTranslation } from "react-i18next";
 import useScreenWidth from "../../hooks/screen/useScreenWidth";
 import LargeNav from "./largeNav/LargeNav";
 import ResponsiveNav from "./responsiveNav/ResponsiveNav";
 
 export default function Navbar() {
   const screenWidth = useScreenWidth();
-
+  const { t } = useTranslation();
   const navbarElements = [
     {
-      name: "Home",
+      name: `${t("navbar.home")}`,
       path: "/",
     },
     {
-      name: "About",
+      name: `${t("navbar.about")}`,
       path: "/about_us",
     },
     {
-      name: "Our Menu",
+      name: `${t("navbar.ourMenu")}`,
       path: "/our_menu",
     },
     {
-      name: "Reserve",
+      name: `${t("navbar.reserve")}`,
       path: "/reserve",
     },
   ];

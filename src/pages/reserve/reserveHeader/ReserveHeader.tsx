@@ -1,25 +1,19 @@
+import { useTranslation } from "react-i18next";
 import styles from "./reserveHeader.module.css";
 
 export default function ReserveHeader() {
+  const { t } = useTranslation();
   return (
     <>
       <section className={styles.headerSection}>
         <div className={styles.headerH}>
-          <h2>RESERVATION</h2>
+          <h2>{t("reservation.title")}</h2>
         </div>
         <div className={styles.headerParagraph1}>
-          <p>
-            Reserve Your Table Today And Indulge In The Flavors Of Lebanon,
-            Right In The Heart Of Barcelona
-          </p>
+          <p>{t("reservation.bigTitle")}</p>
         </div>
         <div className={styles.headerParagraph2}>
-          <p>
-            Masaya offers a culinary experience showcasing Lebanese traditions
-            and flavors, featuring signature mezze platters and grilled dishes,
-            showcasing the warmth of Lebanese hospitality in an elegant, modern
-            setting.
-          </p>
+          <p>{t("reservation.paragraph")}</p>
         </div>
       </section>
     </>

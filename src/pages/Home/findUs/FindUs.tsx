@@ -1,22 +1,23 @@
+// done
+
 import styles from "./findUs.module.css";
 import lebanon from "../../../assets/findUs/Lebanon img.png";
+import { useTranslation } from "react-i18next";
 
 
 export default function FindUs() {
+  const { t } = useTranslation();
   return (
     <>
       <section className={styles.findUsSection}>
         <div className={styles.findUsHeader}>
           <div className={styles.TextexplorefindUs}>
-            <p className={"yllaaaMiniHeader"}>Find us</p>
+            <p className={"yllaaaMiniHeader"}>{t("findUs.title")}</p>
             <h2 className={"yllaaaLargeHeader"}>
-              Authentic Lebanese Flavors,Steps from Casa Batlló
+              {t("findUs.bigTitle")}
             </h2>
             <p className={"yllaaaParagraph"}>
-              Located just a 3-minute walk from the iconic Casa Batlló in
-              Barcelona, Masaya brings the flavors of Lebanon to life in the
-              heart of the city. Rooted in authentic Lebanese culinary
-              traditions,
+              {t("findUs.paragraph")}
             </p>
           </div>
           <div className={styles.lebanonWord}>

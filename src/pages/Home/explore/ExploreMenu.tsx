@@ -1,23 +1,22 @@
+// done
+
 import { BsArrowDownRightCircle } from "react-icons/bs";
 import MenuSlider from "../../../components/Slider/menuSlider/MenuSlider";
 import styles from "./explore.module.css";
 import { Link } from "react-router-dom";
 import useScreenWidth from "../../../hooks/screen/useScreenWidth";
+import { useTranslation } from "react-i18next";
 export default function ExploreMenu() {
+  const { t } = useTranslation();
   const screen = useScreenWidth();
   return (
     <>
       <section className={styles.exploreSection}>
         <div className={styles.exploreHeader}>
           <div className={styles.TextexploreHeader}>
-            <p className={"yllaaaMiniHeader"}>Taste of Lebanese cuisine.</p>
-            <h2 className={"yllaaaLargeHeader"}>Explore Our Flavorful Menu</h2>
-            <p className={"yllaaaParagraph"}>
-              At Masaya, we pride ourselves on providing an exceptional dining
-              experience infused with the rich flavors of Lebanese cuisine. But
-              don't just take our word for it—here’s what our guests have to
-              say:
-            </p>
+            <p className={"yllaaaMiniHeader"}>{t("explore.title")}</p>
+            <h2 className={"yllaaaLargeHeader"}>{t("explore.bigTitle")}</h2>
+            <p className={"yllaaaParagraph"}>{t("explore.paragraph")}</p>
           </div>
           {screen >= 768 && (
             <div className={styles.btnexploreHeader}>

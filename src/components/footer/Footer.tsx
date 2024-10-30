@@ -1,9 +1,13 @@
+// done
+
 import { Link } from "react-router-dom";
 import ReservationForm from "../../pages/reserve/reserveForm/Reservation";
 import styles from "./footer.module.css";
 import logo from "../../assets/map.png";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <>
       <footer className={styles.footer}>
@@ -11,38 +15,38 @@ export default function Footer() {
           <ReservationForm isFor="footer" />
         </div>
         <div className={styles.info}>
-          <h3 className={styles.infoH}>Info</h3>
+          <h3 className={styles.infoH}>{t("footer.info")}</h3>
           <ul className={styles.footerUl}>
             <Link to={"/"} className={styles.linkFooterli}>
-              <li>Home</li>
+              <li>{t("navbar.home")}</li>
             </Link>
             <Link to={"/about_us"} className={styles.linkFooterli}>
-              <li>About us</li>
+              <li>{t("navbar.about")}</li>
             </Link>
             <Link to={"/our_menu"} className={styles.linkFooterli}>
-              <li>Our Menu</li>
+              <li>{t("navbar.ourMenu")}</li>
             </Link>
             <Link to={"/reserve"} className={styles.linkFooterli}>
-              <li>Reservation</li>
+              <li>{t("navbar.reserve")}</li>
             </Link>
           </ul>
         </div>
         <div className={styles.about}>
-          <h3 className={styles.aboutH}>ABOUT US</h3>
+          <h3 className={styles.aboutH}>{t("about.title")}</h3>
           <ul className={styles.footerUl}>
             <Link to={"/"} className={styles.linkFooterli}>
-              <li>Gallery</li>
+              <li>{t("footer.gallery")}</li>
             </Link>
             <Link to={"/about_us"} className={styles.linkFooterli}>
-              <li>Reviews</li>
+              <li>{t("footer.reviews")}</li>
             </Link>
             <Link to={"/reserve"} className={styles.linkFooterli}>
-              <li>Find us</li>
+              <li>{t("footer.findUs")}</li>
             </Link>
           </ul>
         </div>
         <div className={styles.contact}>
-          <h3 className={styles.contactH}>Contact us</h3>
+          <h3 className={styles.contactH}>{t("footer.contactUs")}</h3>
           <ul className={styles.footerUl}>
             <Link to={"#"} className={styles.linkFooterli}>
               <li>+1 (999) 999-99-99</li>
@@ -67,7 +71,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className={styles.copyright}>
-         <p>© 2023 — Copyright</p>
+          <p>© 2023 — Copyright</p>
         </div>
         <div className={styles.logo}>
           <Link to={"/"}>
