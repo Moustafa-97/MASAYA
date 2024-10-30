@@ -51,6 +51,7 @@ body {
 
 .yllaaaSection {
   width: 86%;
+  position: relative;
   /* height: fit-content; */
   min-height: 100vh;
   display: flex;
