@@ -4,7 +4,6 @@ import image1 from "../../assets/findUs/ruggiero.png";
 import Signature from "./signature/Signature";
 import Testimonial from "../Home/testimonial/Testimonial";
 import Gallery from "./gallery/Gallery";
-// import Team from "./team/Team";
 import AboutHeader from "./aboutHeader/AboutHeader";
 export default function About() {
   return (
@@ -15,10 +14,10 @@ export default function About() {
             <AboutHeader />
           </div>
         </div>
-        <div style={{ marginTop: "15vh" }} className="yllaaaSection">
+        <div  className="yllaaaSection">
           <Signature />
         </div>
-        <div className="yllaaaFindUsSection">
+        <div style={{ marginTop: "7vh" }} className="yllaaaFindUsSection">
           <div className="yllaaaFindSection">
             <FindUs />
           </div>

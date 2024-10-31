@@ -46,7 +46,7 @@ export default function ResponsiveNav(props: Props) {
             <ul className={styles.menuUl}>
               <li>
                 {navbarElements.map((element, index) => (
-                  <Link key={index} to={`${element.path}`} className={styles.menuLink}>
+                  <Link key={index} to={`${element.path}`} className={styles.menuLink} onClick={() => setIsOpen(false)}>
                     <li className={styles.menuLi}>{element.name}</li>
                   </Link>
                 ))}

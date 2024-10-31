@@ -211,7 +211,7 @@ const MenuPage: React.FC = () => {
         <div className={styles.menuSection}>
           {/* done */}
           <MenuFilter onFilterChange={setFilter} currentFilter={filter} />
-          <MenuGrid cards={filteredCards} />
+          <MenuGrid cards={filteredCards} currentFilter={filter} />
         </div>
 
         <div className={styles.menuSection}>
