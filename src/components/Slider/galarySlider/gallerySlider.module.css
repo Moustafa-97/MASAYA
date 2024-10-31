@@ -10,35 +10,22 @@
   height: 100%;
   margin: auto;
 }
-.headerSliderCard {
+.gallerySliderCard {
   height: 100%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
-.headerSliderCard .image {
-  height: 80%;
-  width: 100%;
-}
-.headerSliderCard .image img {
-  width: 100%;
+.gallerySliderCard img {
   height: 100%;
-  margin: auto;
-}
-.headerSliderCard .desc p {
-  font-family: "Crimson Text" serif;
-  font-size: clamp(1.2rem, 4vw, 2.4rem);
-  font-style: italic;
-  font-weight: 600;
-  line-height: 31.2px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-.headerSliderCard .name p {
-  font-family: "Crimson Text" serif;
-  font-size: clamp(2.4rem, 4vw, 4.8rem);
-  font-style: italic;
-  font-weight: 700;
-  line-height: 62.39px;
-  text-align: center;
-  color: var(--beij);
+  width: 100%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
 /* dooooots */

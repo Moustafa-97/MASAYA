@@ -2,7 +2,7 @@ import React, { useState, useMemo, Suspense, lazy, useEffect } from "react";
 import Pagination from "../pagination/Pagination";
 import styles from "./menuGrid.module.css";
 
-const MenuCard = lazy(() => import("../cards/menuCard/MenuCard")); // Lazy load Card component
+const MenuCard = lazy(() => import("../cards/menuCard/MenuCard"));
 
 type MenuGridProps = {
   cards: {
