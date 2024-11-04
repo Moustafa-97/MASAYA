@@ -5,24 +5,24 @@ import image1 from "../../assets/findUs/ruggiero.png";
 import AboutUs from "./aboutUs/AboutUs";
 import Header from "./header/Header";
 import Testimonial from "./testimonial/Testimonial";
-import useScreenWidth from "../../hooks/screen/useScreenWidth";
+// import useScreenWidth from "../../hooks/screen/useScreenWidth";
 export default function HomePage() {
-  const screen = useScreenWidth();
+  // const screen = useScreenWidth();
 
   return (
     <>
-      <section>
+      <section className={styles.home}> 
         <div className={styles.homehero}>
-          <div style={{ paddingTop: "15vh" }} className={styles.subHomeHero}>
+          <div style={{ paddingTop: "15rem" }} className={styles.subHomeHero}>
             <Header />
           </div>
         </div>
 
-        <div className="yllaaaSection">
+        <div style={{height:"50rem", paddingTop: "7vh"}}  className="yllaaaSection">
           <AboutUs />
         </div>
         <div
-          style={{ marginTop: screen >= 768 ? "7vh" : "15vh" }}
+          // style={{ marginTop: screen >= 768 ? "117px" : "1500px" }}
           className="yllaaaSection"
         >
           <ExploreMenu />

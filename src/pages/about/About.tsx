@@ -14,7 +14,10 @@ export default function About() {
             <AboutHeader />
           </div>
         </div>
-        <div  className="yllaaaSection">
+        <div
+          style={{ height: "50rem", paddingTop: "7vh" }}
+          className="yllaaaSection"
+        >
           <Signature />
         </div>
         <div style={{ marginTop: "7vh" }} className="yllaaaFindUsSection">

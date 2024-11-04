@@ -52,31 +52,28 @@ body {
 .yllaaaSection {
   width: 86%;
   /* height: fit-content; */
-  min-height: 100vh;
+  height: 70rem;
+  min-height: fit-content;
   display: flex;
-  display: -webkit-flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top: 10%;
   /* ios and mac */
   -webkit-justify-content: center;
   -webkit-align-items: center;
-  -webkit-margin: auto;
-  -webkit-padding-top: 10%;
 }
 
 .yllaaaFindUsSection {
   width: 100%;
-  /* height: fit-content; */
-  min-height: 100vh;
+  height: fit-content;
+  min-height: 70rem;
   overflow: hidden;
   margin: 5vh auto;
 }
 
 .yllaaaFindSection {
   width: 86%;
-  /* height: fit-content; */
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +83,7 @@ body {
 .yllaaaFindUsImgSection {
   width: 100vw;
   height: 55vh;
+  min-height: 40rem;
   margin: 0;
 }
 
@@ -99,5 +97,9 @@ body {
   .yllaaaFindSection,
   .yllaaaSection {
     width: 92%;
+    height: fit-content;
+  }
+  .yllaaaSection {
+    min-height: 90rem;
   }
 }

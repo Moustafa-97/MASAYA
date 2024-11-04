@@ -1,22 +1,23 @@
 .aboutSection {
   width: 100%;
   height: fit-content;
-  min-height: 50vh;
+  min-height: 50rem;
   margin: auto;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .aboutHeader {
   width: 100%;
-  height: 20vh;
+  /* height: 20rem; */
   min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin: auto 0;
+  align-self: flex-start;
+  margin: auto;
 }
 .TextaboutHeader {
   width: 90%;
@@ -53,6 +54,8 @@
 .aboutimg img {
   width: 100%;
   height: 100%;
+  min-height: 40rem;
+  object-fit: cover;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;

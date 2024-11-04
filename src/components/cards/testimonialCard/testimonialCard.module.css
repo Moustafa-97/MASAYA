@@ -12,7 +12,7 @@
 .card .cardBg {
   width: 100%;
   height: fit-content;
-  min-height: 40vh;
+  min-height: 33rem;
   margin: auto;
   position: relative;
   z-index: 1;
