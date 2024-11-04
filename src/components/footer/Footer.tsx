@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ReservationForm from "../../pages/reserve/reserveForm/Reservation";
 import styles from "./footer.module.css";
 import logo from "../../assets/map.png";
-import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { FiInstagram, FiTwitter } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import { LuFacebook } from "react-icons/lu";
 export default function Footer() {
