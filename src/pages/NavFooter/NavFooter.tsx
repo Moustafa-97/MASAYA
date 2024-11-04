@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./navFooter.module.css";
 import Footer from "../../components/footer/Footer";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 
 export default function NavFooter() {
   const whatsappNumber = "+201146598154";
@@ -20,11 +20,12 @@ export default function NavFooter() {
         onClick={handleWhatsAppClick}
         style={{
           cursor: "pointer",
-          width: "5.5vw",
-          height: "5.5vw",
+          width: "fit-content",
+          height: "fit-content",
+          padding:"1rem",
           minWidth: "3rem",
           minHeight: "3rem",
-          borderRadius: "50%",
+          borderRadius: "5rem",
           position: "fixed",
           bottom: "5%",
           right: "5%",
@@ -35,15 +36,21 @@ export default function NavFooter() {
           justifyContent: "center",
         }}
       >
-        <FaWhatsapp
+        <p
           style={{
-            width: "70%",
-            height: "70%",
-            margin: "auto",
+            width: "100%",
+            height: "100%",
+            margin: "auto 0",
             display: "block",
             color: "var(--red)",
+            fontSize: "clamp(1rem, 4vw, 2rem)",
+            fontWeight: "bold",
+            textAlign: "center",
+            alignSelf:"center",
+            justifySelf:"center",
+
           }}
-        />
+        >BOOK VIA WHATSAPP</p>
       </div>
       <section className={styles.webpage}>
         <header className={styles.navbarElement}>

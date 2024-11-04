@@ -6,6 +6,7 @@ import styles from "./footer.module.css";
 import logo from "../../assets/map.png";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
+import { LuFacebook } from "react-icons/lu";
 export default function Footer() {
   const { t } = useTranslation();
   return (
@@ -61,7 +62,7 @@ export default function Footer() {
         </div>
         <div className={styles.social}>
           <Link to={"#"} className={styles.linkFootersocial}>
-            <FiFacebook />
+            <LuFacebook />
           </Link>
           <Link to={"#"} className={styles.linkFootersocial}>
             <FiInstagram />

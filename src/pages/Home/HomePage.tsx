@@ -5,7 +5,10 @@ import image1 from "../../assets/findUs/ruggiero.png";
 import AboutUs from "./aboutUs/AboutUs";
 import Header from "./header/Header";
 import Testimonial from "./testimonial/Testimonial";
+import useScreenWidth from "../../hooks/screen/useScreenWidth";
 export default function HomePage() {
+  const screen = useScreenWidth();
+
   return (
     <>
       <section>
@@ -18,7 +21,10 @@ export default function HomePage() {
         <div className="yllaaaSection">
           <AboutUs />
         </div>
-        <div style={{marginTop:"7vh"}} className="yllaaaSection">
+        <div
+          style={{ marginTop: screen >= 768 ? "7vh" : "15vh" }}
+          className="yllaaaSection"
+        >
           <ExploreMenu />
         </div>
         <div className="yllaaaFindUsSection">
