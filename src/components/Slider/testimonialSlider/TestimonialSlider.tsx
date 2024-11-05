@@ -2,8 +2,8 @@ import { useState } from "react";
 import styles from "./testimonialS.module.css";
 import { useKeenSlider } from "keen-slider/react";
 import TestimonialCard from "../../cards/testimonialCard/TestimonialCard";
-import testi1 from "../../../assets/testimg.png";
-import testi2 from "../../../assets/testimg2.png";
+import testi1 from "../../../assets/testimg.jpg";
+import testi2 from "../../../assets/testimg2.jpg";
 
 export default function TestimonialSlider() {
   const cards = [
