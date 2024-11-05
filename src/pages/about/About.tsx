@@ -1,6 +1,6 @@
 import FindUs from "../Home/findUs/FindUs";
 import styles from "./about.module.css";
-import image1 from "../../assets/findUs/ruggiero.png";
+import image1 from "../../assets/findUs/ruggiero.jpg";
 import Signature from "./signature/Signature";
 import Testimonial from "../Home/testimonial/Testimonial";
 import Gallery from "./gallery/Gallery";
