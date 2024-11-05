@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styles from "./headerSlider.module.css";
 import { useKeenSlider } from "keen-slider/react";
-import menu1 from "../../../assets/home/headerHome.png";
-import menu2 from "../../../assets/home/headerHome2.png";
-import menu3 from "../../../assets/home/headerHome3.png";
+import menu1 from "../../../assets/home/headerHome.jpg";
+import menu2 from "../../../assets/home/headerHome2.jpg";
+import menu3 from "../../../assets/home/headerHome3.jpg";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 export default function HeaderSlider() {
