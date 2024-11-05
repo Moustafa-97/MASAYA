@@ -27,8 +27,22 @@
   letter-spacing: 0.2rem;
   font-style: italic;
   text-align: start;
-  padding-bottom: 3%;
-  border-bottom: 2px solid var(--beij);
+  padding-bottom: 2rem;
+  position: relative;
+}
+.headerH h2::after {
+  content: "";
+  width: 30%;
+  height: 0.4rem;
+  background: var(--beij);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 .headerParagraph1 {
   text-align: start;

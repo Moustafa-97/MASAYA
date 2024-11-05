@@ -1,34 +1,36 @@
 import { useState } from "react";
 import styles from "./gallerySlider.module.css";
 import { useKeenSlider } from "keen-slider/react";
-import about1 from "../../../assets/about/8423bf06991f6c9fd0c91dec1484e4c5.jpg";
+import gal1 from "../../../assets/about/gal1.jpg";
+import gal2 from "../../../assets/about/gal2.jpg";
+import gal3 from "../../../assets/about/gal3.jpg";
 import useScreenWidth from "../../../hooks/screen/useScreenWidth";
 
 export default function GallerySlider() {
   const cards = [
     {
       id: 1,
-      image: about1,
+      image: gal1,
     },
     {
       id: 2,
 
-      image: about1,
+      image: gal2,
     },
     {
       id: 3,
 
-      image: about1,
+      image: gal3,
     },
     {
       id: 4,
 
-      image: about1,
+      image: gal1,
     },
     {
       id: 5,
 
-      image: about1,
+      image: gal2,
     },
   ];
 
