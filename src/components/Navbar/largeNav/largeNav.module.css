@@ -55,3 +55,28 @@
   letter-spacing: 0.05em;
   text-align: left;
 }
+
+.langBtn {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  margin: auto;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.langBtn p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}

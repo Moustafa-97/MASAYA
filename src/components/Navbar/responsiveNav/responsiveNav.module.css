@@ -9,6 +9,19 @@
   z-index: 1010;
   position: absolute;
 }
+.respLogo{
+  z-index: 1010;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100px;
+}
+.respLogo img{
+  height: 100%;
+  width: 100%;
+}
+
 .menuButton svg {
   font-size: 3rem;
 }

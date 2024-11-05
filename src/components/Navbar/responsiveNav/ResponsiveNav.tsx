@@ -2,6 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./responsiveNav.module.css";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
+import { useTranslation } from "react-i18next";
+import spain from "../spain.svg";
+import england from "../england.svg";
+import logo from "../../../assets/logo.png";
+  
 type Props = {
   navbarElements: {
     name: string;
@@ -31,9 +36,19 @@ export default function ResponsiveNav(props: Props) {
     setIsOpen(!isOpen);
   };
 
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+  };
+  const currentLanguage = i18n.language;
+
   return (
     <>
       <div ref={menuRef}>
+        <div className={styles.respLogo}>
+          <img src={logo} alt="logo" />
+        </div>
         <button
           className={styles.menuButton}
           onClick={toggleMenu}
@@ -46,10 +61,33 @@ export default function ResponsiveNav(props: Props) {
             <ul className={styles.menuUl}>
               <li>
                 {navbarElements.map((element, index) => (
-                  <Link key={index} to={`${element.path}`} className={styles.menuLink} onClick={() => setIsOpen(false)}>
+                  <Link
+                    key={index}
+                    to={`${element.path}`}
+                    className={styles.menuLink}
+                    onClick={() => setIsOpen(false)}
+                  >
                     <li className={styles.menuLi}>{element.name}</li>
                   </Link>
                 ))}
+              </li>
+
+              <li>
+                <div
+                  onClick={() =>
+                    changeLanguage(currentLanguage === "en" ? "es" : "en")
+                  }
+                  className={styles.langBtn}
+                >
+                  <p>
+                    {" "}
+                    {currentLanguage === "en" ? (
+                      <img src={spain} alt="spanish" />
+                    ) : (
+                      <img src={england} alt="english" />
+                    )}
+                  </p>
+                </div>
               </li>
             </ul>
           </div>

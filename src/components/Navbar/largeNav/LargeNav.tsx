@@ -4,6 +4,9 @@ import lebLogo from "../../../assets/lebLogo.svg";
 import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setLocation } from "../../../redux/features/location/locationSlice";
+import { useTranslation } from "react-i18next";
+import spain from "../spain.svg";
+import england from "../england.svg";
 
 type Props = {
   navbarElements: {
@@ -23,6 +26,13 @@ export default function LargeNav(props: Props) {
   useEffect(() => {
     dispatch(setLocation(location.pathname));
   }, [location.pathname, dispatch]);
+
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+  };
+  const currentLanguage = i18n.language;
 
   return (
     <nav className={styles.navbar}>
@@ -49,6 +59,20 @@ export default function LargeNav(props: Props) {
           </Link>
         ))}
       </ul>
+      {/* switch language btn */}
+      <div
+        onClick={() => changeLanguage(currentLanguage === "en" ? "es" : "en")}
+        className={styles.langBtn}
+      >
+        <p>
+          {" "}
+          {currentLanguage === "en" ? (
+            <img src={spain} alt="spanish" />
+          ) : (
+            <img src={england} alt="english" />
+          )}
+        </p>
+      </div>
     </nav>
   );
 }
