@@ -11,6 +11,7 @@ export default function TestimonialSlider() {
       id: 1,
       name: "Patricia O'Keefe",
       image: testi1,
+      rating: 5,
       comment:
         "The service and the food was excellent. Very nice lebanese couple managing the place. I am lebanese myself and it was like having a taste from home. I 100% recommend!!",
     },
@@ -19,6 +20,7 @@ export default function TestimonialSlider() {
       id: 2,
       name: "Linda williams",
       image: testi2,
+      rating: 3,
       comment:
         "The food at this establishment is exceptional, with the owners showing great care for their customers and making it a must-try if in Barcelona.",
     },
