@@ -6,7 +6,7 @@
   background-color: var(--red);
   position: relative;
 }
-.menuhero::after {
+.menuhero::before {
   content: "";
   position: absolute;
   top: 0;

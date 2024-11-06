@@ -10,12 +10,12 @@ export default function About() {
     <>
       <div>
         <div className={styles.abouthero}>
-          <div style={{ paddingTop: "15vh" }}>
+          <div style={{ paddingTop: "10rem" }}>
             <AboutHeader />
           </div>
         </div>
         <div
-          style={{ height: "50rem", paddingTop: "7vh" }}
+          // style={{ height: "50rem", paddingTop: "7vh" }}
           className="yllaaaSection"
         >
           <Signature />

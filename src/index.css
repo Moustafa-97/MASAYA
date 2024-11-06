@@ -51,7 +51,8 @@ body {
 
 .yllaaaSection {
   width: 86%;
-  /* height: fit-content; */
+  position: relative;
+  height: fit-content;
   height: 70rem;
   min-height: fit-content;
   display: flex;
@@ -98,8 +99,15 @@ body {
   .yllaaaSection {
     width: 92%;
     height: fit-content;
+    min-height: 40rem;
+    padding-bottom: 5rem;
   }
-  .yllaaaSection {
-    min-height: 90rem;
+  
+  .yllaaaFindUsSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    flex-direction: column;
   }
 }

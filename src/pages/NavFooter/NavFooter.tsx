@@ -30,20 +30,7 @@ export default function NavFooter() {
         <div className={styles.whatsappIcon}>
           <FaWhatsapp />
         </div>
-        <div
-          className={styles.whatsappText}
-          style={{
-            // width: "100%",
-            // height: "100%",
-            // margin: "auto 0",
-            // display: "block",
-            // textAlign: "center",
-            // alignSelf: "center",
-            // justifySelf: "center",
-          }}
-        >
-          Book via whatsapp
-        </div>
+        <div className={styles.whatsappText}>Book via whatsapp</div>
       </div>
       <section className={styles.webpage}>
         <header className={styles.navbarElement}>

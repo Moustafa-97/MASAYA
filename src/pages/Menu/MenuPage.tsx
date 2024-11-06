@@ -203,7 +203,7 @@ const MenuPage: React.FC = () => {
     <>
       <section>
         <div className={styles.menuhero}>
-          <div style={{ paddingTop: "15vh" }}>
+          <div style={{ paddingTop: "10rem" }}>
             {/* done */}
             <MenuHeader />
           </div>

@@ -182,5 +182,8 @@
 @media (min-width: 220px) and (max-width: 768px) {
 .card{
   min-height: 20rem;
+  max-height:25rem ;
+  max-width: 25rem;
+
 }
 }

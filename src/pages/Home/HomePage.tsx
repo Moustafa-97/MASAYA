@@ -13,12 +13,12 @@ export default function HomePage() {
     <>
       <section className={styles.home}> 
         <div className={styles.homehero}>
-          <div style={{ paddingTop: "15rem" }} className={styles.subHomeHero}>
+          <div style={{ paddingTop: "10rem" }} className={styles.subHomeHero}>
             <Header />
           </div>
         </div>
 
-        <div style={{height:"50rem", paddingTop: "7vh"}}  className="yllaaaSection">
+        <div style={{ paddingTop: "7vh"}}  className="yllaaaSection">
           <AboutUs />
         </div>
         <div
