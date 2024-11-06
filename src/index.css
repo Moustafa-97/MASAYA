@@ -63,13 +63,22 @@ body {
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
-
+.yllaaaP6 {
+  padding-top: 6rem;
+}
 .yllaaaFindUsSection {
   width: 100%;
   height: fit-content;
   /* min-height: 70rem; */
   overflow: hidden;
-  margin: 5vh auto;
+  margin: 5vh auto 10vh auto;
+}
+.yllaaaFindUsSectionAbout {
+  width: 100%;
+  height: fit-content;
+  /* min-height: 70rem; */
+  overflow: hidden;
+  margin: 0vh auto 10vh auto;
 }
 
 .yllaaaFindSection {
@@ -95,18 +104,30 @@ body {
 }
 
 @media (min-width: 220px) and (max-width: 768px) {
-  .yllaaaFindSection,
   .yllaaaSection {
     width: 92%;
     min-height: fit-content;
     padding-bottom: 5rem;
   }
-  
+  .yllaaaFindSection {
+    width: 92%;
+    min-height: fit-content;
+    padding-bottom: 0rem;
+  }
+
   .yllaaaFindUsSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: fit-content;
     flex-direction: column;
+    margin: 0vh auto 10vh auto;
+  }
+
+  .yllaaaP6 {
+    padding-top: 0rem;
+  }
+  .yllaaaP6R {
+    padding-top: 4rem;
   }
 }

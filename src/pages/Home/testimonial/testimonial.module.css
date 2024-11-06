@@ -1,6 +1,5 @@
 .testimonialSection {
   width: 100%;
-  height: 70rem;
   min-height: fit-content;
   margin: auto;
   display: flex;
@@ -10,7 +9,7 @@
 }
 .testimonialHeader {
   width: 100%;
-  height: 20vh;
+  height: fit-content;
   min-height: fit-content;
   display: flex;
   flex-direction: column;
@@ -20,5 +19,5 @@
 }
 .testimonialSlider {
   width: 100%;
-  /* margin: 4vh auto; */
+  margin: 4vh auto;
 }

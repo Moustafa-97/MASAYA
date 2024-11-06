@@ -1,7 +1,7 @@
 .aboutSection {
   width: 100%;
   height: fit-content;
-  min-height: 50rem;
+  /* min-height: 50rem; */
   margin: auto;
   display: flex;
   display: -webkit-flex;
@@ -72,6 +72,6 @@
     width: 100%;
     height: 48.484vh;
     max-height: 28.6rem;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }

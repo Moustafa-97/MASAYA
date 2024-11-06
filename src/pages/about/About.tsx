@@ -17,7 +17,7 @@ export default function About() {
         <div style={{ paddingTop: "4rem" }} className="yllaaaSection">
           <Signature />
         </div>
-        <div className="yllaaaFindUsSection">
+        <div className="yllaaaFindUsSectionAbout">
           <div className="yllaaaFindSection">
             <FindUs />
           </div>
@@ -28,7 +28,7 @@ export default function About() {
         {/* <div className="yllaaaSection">
           <Team />
         </div> */}
-        <div className="yllaaaSection">
+        <div className="yllaaaSection yllaaaP6R">
           <Gallery />
         </div>
         <div className="yllaaaSection">

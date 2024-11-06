@@ -11,20 +11,17 @@ export default function HomePage() {
 
   return (
     <>
-      <section className={styles.home}> 
+      <section className={styles.home}>
         <div className={styles.homehero}>
           <div style={{ paddingTop: "10rem" }} className={styles.subHomeHero}>
             <Header />
           </div>
         </div>
 
-        <div style={{ paddingTop: "4rem"}}  className="yllaaaSection">
+        <div style={{ paddingTop: "4rem" }} className="yllaaaSection">
           <AboutUs />
         </div>
-        <div
-          // style={{ marginTop: screen >= 768 ? "117px" : "1500px" }}
-          className="yllaaaSection"
-        >
+        <div className="yllaaaSection yllaaaP6">
           <ExploreMenu />
         </div>
         <div className="yllaaaFindUsSection">
