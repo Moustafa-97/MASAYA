@@ -25,9 +25,7 @@ export default function About() {
             <img src={image1} alt="YLLLAleb" />
           </div>
         </div>
-        {/* <div className="yllaaaSection">
-          <Team />
-        </div> */}
+        
         <div className="yllaaaSection yllaaaP6R">
           <Gallery />
         </div>
