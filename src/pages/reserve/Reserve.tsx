@@ -7,7 +7,7 @@ export default function Reserve() {
     <>
       <div>
         <div className={styles.reservehero}>
-          <div style={{ paddingTop: "15vh" }}>
+          <div style={{ paddingTop: "10rem" }}>
             <ReserveHeader />
           </div>
         </div>
