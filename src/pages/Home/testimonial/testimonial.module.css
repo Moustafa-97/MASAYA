@@ -1,7 +1,7 @@
 .testimonialSection {
   width: 100%;
-  height: fit-content;
-  min-height: 70rem;
+  height: 70rem;
+  min-height: fit-content;
   margin: auto;
   display: flex;
   flex-direction: column;

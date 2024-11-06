@@ -20,7 +20,7 @@ export default function About() {
         >
           <Signature />
         </div>
-        <div style={{ marginTop: "7vh" }} className="yllaaaFindUsSection">
+        <div className="yllaaaFindUsSection">
           <div className="yllaaaFindSection">
             <FindUs />
           </div>

@@ -53,7 +53,7 @@ body {
   width: 86%;
   position: relative;
   height: fit-content;
-  height: 70rem;
+  /* height: 70rem; */
   min-height: fit-content;
   display: flex;
   justify-content: center;
@@ -98,8 +98,8 @@ body {
   .yllaaaFindSection,
   .yllaaaSection {
     width: 92%;
-    height: fit-content;
-    min-height: 40rem;
+    /* height: fit-content; */
+    min-height: fit-content;
     padding-bottom: 5rem;
   }
   
