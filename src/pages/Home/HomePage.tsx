@@ -18,7 +18,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div style={{ paddingTop: "7vh"}}  className="yllaaaSection">
+        <div style={{ paddingTop: "4rem"}}  className="yllaaaSection">
           <AboutUs />
         </div>
         <div

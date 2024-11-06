@@ -98,7 +98,6 @@ body {
   .yllaaaFindSection,
   .yllaaaSection {
     width: 92%;
-    /* height: fit-content; */
     min-height: fit-content;
     padding-bottom: 5rem;
   }
