@@ -41,7 +41,7 @@
 }
 .headerBtns {
   grid-column: 1 / span 1;
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
   margin: 3vh 0;
   display: flex;
   gap: 10vw;
