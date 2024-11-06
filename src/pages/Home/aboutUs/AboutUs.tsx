@@ -2,7 +2,7 @@
 
 import { BsArrowRightCircle } from "react-icons/bs";
 import styles from "./aboutus.module.css";
-import aboutimg from "../../../assets/about.jpg";
+import aboutimg from "../../../assets/about.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

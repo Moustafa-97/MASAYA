@@ -95,6 +95,7 @@ const resources = {
         bakery: "Bakery",
         meat: "Meat",
         chicken: "Chicken",
+        
       },
       reservation: {
         title: "RESERVATION",

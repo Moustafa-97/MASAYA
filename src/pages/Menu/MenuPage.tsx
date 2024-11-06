@@ -8,13 +8,15 @@ import menuImg from "../../assets/menu/menu1.jpg";
 import styles from "./menuPage.module.css";
 import Testimonial from "../Home/testimonial/Testimonial";
 import MenuHeader from "./menuHeader/MenuHeader";
+import { useTranslation } from "react-i18next";
 const MenuPage: React.FC = () => {
-  const [filter, setFilter] = useState("All");
+  const { t } = useTranslation();
+  const [filter, setFilter] = useState(t("menuFilter.all"));
   const cards = [
     {
       id: 1,
       name: "Hummus",
-      type: "Appetizer",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Creamy blend of chickpeas, tahini, garlic, and lemon, served with olive oil and pita.",
@@ -23,7 +25,7 @@ const MenuPage: React.FC = () => {
     {
       id: 2,
       name: "Falafel",
-      type: "Appetizer",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Crispy fried chickpea balls seasoned with herbs and spices, served with tahini sauce.",
@@ -32,7 +34,7 @@ const MenuPage: React.FC = () => {
     {
       id: 3,
       name: "Tabbouleh",
-      type: "Salad",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Refreshing salad with parsley, bulgur, tomatoes, and mint, dressed with lemon juice and olive oil.",
@@ -41,7 +43,7 @@ const MenuPage: React.FC = () => {
     {
       id: 4,
       name: "Fattoush",
-      type: "Salad",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Crispy salad with mixed greens, radishes, tomatoes, and fried pita bread, topped with sumac.",
@@ -50,7 +52,7 @@ const MenuPage: React.FC = () => {
     {
       id: 5,
       name: "Shish Tawook",
-      type: "Chicken",
+      type: t("menuFilter.chicken"),
       image: menuImg,
       description:
         "Grilled chicken skewers marinated in garlic, lemon, and spices, served with garlic sauce.",
@@ -59,7 +61,7 @@ const MenuPage: React.FC = () => {
     {
       id: 6,
       name: "Kibbeh Nayyeh",
-      type: "Meat",
+      type: t("menuFilter.meat"),
       image: menuImg,
       description:
         "Traditional Lebanese raw minced lamb or beef mixed with bulgur and spices, served with pita.",
@@ -68,7 +70,7 @@ const MenuPage: React.FC = () => {
     {
       id: 7,
       name: "Lamb Kofta",
-      type: "Meat",
+      type: t("menuFilter.meat"),
       image: menuImg,
       description:
         "Grilled lamb skewers mixed with parsley, onions, and spices, served with tahini sauce.",
@@ -77,7 +79,7 @@ const MenuPage: React.FC = () => {
     {
       id: 8,
       name: "Kafta",
-      type: "Meat",
+      type: t("menuFilter.meat"),
       image: menuImg,
       description:
         "Minced lamb or beef mixed with parsley and onions, shaped into skewers and grilled.",
@@ -86,7 +88,7 @@ const MenuPage: React.FC = () => {
     {
       id: 9,
       name: "Manakish Zaatar",
-      type: "Bakery",
+      type: t("menuFilter.bakery"),
       image: menuImg,
       description:
         "Lebanese flatbread topped with a mixture of za'atar, olive oil, and sesame seeds.",
@@ -95,7 +97,7 @@ const MenuPage: React.FC = () => {
     {
       id: 10,
       name: "Batata Harra",
-      type: "Appetizer",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Spicy roasted potatoes tossed with garlic, coriander, and chili, served warm.",
@@ -104,7 +106,7 @@ const MenuPage: React.FC = () => {
     {
       id: 11,
       name: "Warak Enab",
-      type: "Appetizer",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Grape leaves stuffed with rice, tomatoes, and herbs, served cold.",
@@ -113,7 +115,7 @@ const MenuPage: React.FC = () => {
     {
       id: 12,
       name: "Foul Moudammas",
-      type: "Appetizer",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Stewed fava beans with garlic, lemon, and olive oil, garnished with parsley and tomatoes.",
@@ -122,7 +124,7 @@ const MenuPage: React.FC = () => {
     {
       id: 13,
       name: "Mixed Grill",
-      type: "Grill",
+      type: t("menuFilter.meat"),
       image: menuImg,
       description:
         "Selection of grilled meats, including lamb, chicken, and beef, served with rice and grilled vegetables.",
@@ -131,7 +133,7 @@ const MenuPage: React.FC = () => {
     {
       id: 14,
       name: "Chicken Shawarma",
-      type: "Chicken",
+      type: t("menuFilter.chicken"),
       image: menuImg,
       description:
         "Marinated chicken roasted on a vertical spit, served with garlic sauce and pickles.",
@@ -140,7 +142,7 @@ const MenuPage: React.FC = () => {
     {
       id: 15,
       name: "Baklava",
-      type: "Dessert",
+      type: t("menuFilter.bakery"),
       image: menuImg,
       description:
         "Sweet pastry made of layers of filo filled with nuts and honey syrup.",
@@ -149,7 +151,7 @@ const MenuPage: React.FC = () => {
     {
       id: 16,
       name: "Mouhallabieh",
-      type: "Dessert",
+      type: t("menuFilter.bakery"),
       image: menuImg,
       description:
         "Lebanese milk pudding flavored with rose water and garnished with pistachios.",
@@ -158,7 +160,7 @@ const MenuPage: React.FC = () => {
     {
       id: 17,
       name: "Sambousek",
-      type: "Appetizer",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Fried pastry filled with spiced meat or cheese, served with yogurt dip.",
@@ -167,7 +169,7 @@ const MenuPage: React.FC = () => {
     {
       id: 18,
       name: "Arayes",
-      type: "Meat",
+      type: t("menuFilter.meat"),
       image: menuImg,
       description:
         "Grilled pita stuffed with spiced minced meat, served with tahini dip.",
@@ -176,7 +178,7 @@ const MenuPage: React.FC = () => {
     {
       id: 19,
       name: "Lebanese Coffee",
-      type: "Beverage",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Rich and aromatic coffee brewed with cardamom, served in a traditional cup.",
@@ -185,7 +187,7 @@ const MenuPage: React.FC = () => {
     {
       id: 20,
       name: "Jallab",
-      type: "Beverage",
+      type: t("menuFilter.appetizer"),
       image: menuImg,
       description:
         "Traditional drink made with date molasses, rose water, and pine nuts.",
@@ -194,7 +196,7 @@ const MenuPage: React.FC = () => {
   ];
 
   const filteredCards = useMemo(() => {
-    return filter === "All"
+    return filter === t("menuFilter.all")
       ? cards
       : cards.filter((item) => item.type === filter);
   }, [filter, cards]);
