@@ -67,7 +67,7 @@ body {
 .yllaaaFindUsSection {
   width: 100%;
   height: fit-content;
-  min-height: 70rem;
+  /* min-height: 70rem; */
   overflow: hidden;
   margin: 5vh auto;
 }
@@ -106,7 +106,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40vh;
+    height: fit-content;
     flex-direction: column;
   }
 }

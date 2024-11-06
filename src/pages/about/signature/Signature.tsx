@@ -17,7 +17,7 @@ export default function Signature() {
           </div>
         </div>
         <div className={styles.signatureimg}>
-          <img src={signatureimg} alt="abbb" />
+          <img src={signatureimg} alt="signatureimg" />
         </div>
       </section>
     </>
