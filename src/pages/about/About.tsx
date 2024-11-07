@@ -14,10 +14,14 @@ export default function About() {
             <AboutHeader />
           </div>
         </div>
-        <div style={{ paddingTop: "4rem" }} className="yllaaaSection">
+        <div
+          data-aos="fade-up"
+          style={{ paddingTop: "4rem" }}
+          className="yllaaaSection"
+        >
           <Signature />
         </div>
-        <div className="yllaaaFindUsSectionAbout">
+        <div data-aos="fade-up" className="yllaaaFindUsSectionAbout">
           <div className="yllaaaFindSection">
             <FindUs />
           </div>
@@ -25,11 +29,11 @@ export default function About() {
             <img src={image1} alt="YLLLAleb" />
           </div>
         </div>
-        
-        <div className="yllaaaSection yllaaaP6R">
+
+        <div data-aos="fade-up" className="yllaaaSection yllaaaP6R">
           <Gallery />
         </div>
-        <div className="yllaaaSection">
+        <div data-aos="fade-up" className="yllaaaSection">
           <Testimonial />
         </div>
       </div>

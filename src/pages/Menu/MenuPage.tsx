@@ -210,13 +210,13 @@ const MenuPage: React.FC = () => {
             <MenuHeader />
           </div>
         </div>
-        <div className={styles.menuSection}>
+        <div data-aos="fade-up" className={styles.menuSection}>
           {/* done */}
           <MenuFilter onFilterChange={setFilter} currentFilter={filter} />
           <MenuGrid cards={filteredCards} currentFilter={filter} />
         </div>
 
-        <div className={styles.menuSection}>
+        <div data-aos="fade-up" className={styles.menuSection}>
           {/* done */}
           <Testimonial />
         </div>

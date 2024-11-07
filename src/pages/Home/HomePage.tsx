@@ -18,13 +18,13 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div style={{ paddingTop: "4rem" }} className="yllaaaSection">
+        <div data-aos="fade-up" style={{ paddingTop: "4rem" }} className="yllaaaSection">
           <AboutUs />
         </div>
-        <div className="yllaaaSection yllaaaP6">
+        <div data-aos="fade-up" className="yllaaaSection yllaaaP6">
           <ExploreMenu />
         </div>
-        <div className="yllaaaFindUsSection">
+        <div data-aos="fade-up" className="yllaaaFindUsSection">
           <div className="yllaaaFindSection">
             <FindUs />
           </div>
@@ -32,7 +32,7 @@ export default function HomePage() {
             <img src={image1} alt="YLLLAleb" />
           </div>
         </div>
-        <div className="yllaaaSection">
+        <div data-aos="fade-up" className="yllaaaSection">
           <Testimonial />
         </div>
       </section>
