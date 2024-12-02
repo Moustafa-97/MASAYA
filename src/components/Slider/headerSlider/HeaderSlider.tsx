@@ -16,13 +16,13 @@ export default function HeaderSlider() {
     },
     {
       id: 2,
-      name: "Humus",
+      name: "Grilled Kebab",
       description: "Our Lebanese signature",
       image: menu2,
     },
     {
       id: 3,
-      name: "Humus",
+      name: "Tabouleh",
       description: "Our Lebanese signature",
       image: menu3,
     },
