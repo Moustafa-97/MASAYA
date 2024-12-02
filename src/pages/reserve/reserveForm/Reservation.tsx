@@ -15,6 +15,7 @@ const ReservationForm = (props: Props) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [date, setDate] = useState<Date | null>(new Date());
+  const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -26,6 +27,7 @@ const ReservationForm = (props: Props) => {
       name,
       phone,
       date: date ? date.toDateString() : "",
+      time,
       guests,
     };
     try {
@@ -40,6 +42,7 @@ const ReservationForm = (props: Props) => {
       setPhone("");
       setDate(new Date());
       setGuests("");
+      setTime("");
     } catch (error) {
       alert("Failed to send reservation request. Please try again.");
       console.error("Error sending email:", error);
@@ -81,6 +84,15 @@ const ReservationForm = (props: Props) => {
             value={date ? date.toISOString().slice(0, 10) : ""}
             onChange={(e) => setDate(new Date(e.target.value))}
             min={new Date().toISOString().slice(0, 10)}
+            required
+          />
+        </label>
+        <label>
+          {t("reservation.time")}
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
             required
           />
         </label>
