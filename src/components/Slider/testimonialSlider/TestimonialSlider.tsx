@@ -20,7 +20,7 @@ export default function TestimonialSlider() {
       id: 2,
       name: "Linda williams",
       image: testi2,
-      rating: 3,
+      rating: 5,
       comment:
         "The food at this establishment is exceptional, with the owners showing great care for their customers and making it a must-try if in Barcelona.",
     },
